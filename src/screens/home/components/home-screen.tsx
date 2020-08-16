@@ -66,7 +66,6 @@ const HomeScreen: FC<HomeScreenProps> = ({
   data,
   errors,
 }) => {
-  console.log('loading', { loading })
   return (
     <>
       <StatusBar barStyle="dark-content" />

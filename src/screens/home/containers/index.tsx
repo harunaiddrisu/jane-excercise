@@ -34,11 +34,9 @@ const HomeScreenContainer: FC = () => {
         query: GET_REPOSITORIES,
         variables: { query },
       })
-      console.log('data', { data })
       setLoading(false)
       setQueryResult({ data, loading })
     } catch (errors) {
-      console.log('errors', { errors })
       setErrors(errors)
     }
   }
@@ -57,7 +55,6 @@ const HomeScreenContainer: FC = () => {
         runQuery(searchQuery)
       }
     } catch (errors) {
-      console.log('mutation errors', { errors })
       setErrors(errors)
     }
   }
