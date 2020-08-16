@@ -1,0 +1,26 @@
+touch# don't ever lint node_modules
+node_modules
+# don't lint build output (make sure it's set to your correct build folder name)
+dist
+# don't lint nyc coverage output
+coverage
+
+# exclude generated files
+src/types/graphqlTypes.ts
+src/test/createTestClient.ts
+src/**/__generated__/**
+schema.json
+
+/build/**
+/coverage/**
+/docs/**
+/jsdoc/**
+/templates/**
+/e2e/**
+/tmp/**
+/node_modules/**
+test.js
+!.eslintrc.js
+/release.config.js
+/metro.config.js
+D
